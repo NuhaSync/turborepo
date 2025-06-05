@@ -1,120 +1,120 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
 
-	"organizeImports": {
-		"enabled": true
-	},
+  "organizeImports": {
+    "enabled": true
+  },
 
-	"formatter": {
-		"enabled": true,
-		"formatWithErrors": false,
-		"indentStyle": "space",
-		"indentWidth": 2,
-		"lineWidth": 100,
-		"lineEnding": "lf",
-		"ignore": ["node_modules/", "build/", ".next/", "dist/", ".turbo"]
-	},
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 80,
+    "lineEnding": "lf",
+    "ignore": ["node_modules/", "build/", ".next/", "dist/", ".turbo"]
+  },
 
-	"linter": {
-		"enabled": true,
-		"rules": {
-			"recommended": true,
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
 
-			"suspicious": {
-				"noExplicitAny": "warn",
-				"noDebugger": "error",
-				"noSparseArray": "error",
-				"noUnsafeNegation": "error",
-				"useAwait": "warn",
-				"useValidTypeof": "error"
-			},
+      "suspicious": {
+        "noExplicitAny": "warn",
+        "noDebugger": "error",
+        "noSparseArray": "error",
+        "noUnsafeNegation": "error",
+        "useAwait": "warn",
+        "useValidTypeof": "error"
+      },
 
-			"style": {
-				"noVar": "error",
-				"useConst": "error",
-				"useAsConstAssertion": "warn",
-				"useBlockStatements": "warn",
-				"useCollapsedElseIf": "warn",
-				"useFragmentSyntax": "warn",
-				"useWhile": "warn",
-				"noNonNullAssertion": "off"
-			},
+      "style": {
+        "noVar": "error",
+        "useConst": "error",
+        "useAsConstAssertion": "warn",
+        "useBlockStatements": "warn",
+        "useCollapsedElseIf": "warn",
+        "useFragmentSyntax": "warn",
+        "useWhile": "warn",
+        "noNonNullAssertion": "off"
+      },
 
-			"performance": {
-				"noDelete": "warn"
-			},
+      "performance": {
+        "noDelete": "warn"
+      },
 
-			"correctness": {
-				"noEmptyPattern": "error",
-				"noInvalidConstructorSuper": "error",
-				"noNewSymbol": "error",
-				"noNonoctalDecimalEscape": "error",
-				"noSwitchDeclarations": "error",
-				"noUndeclaredVariables": "error",
-				"noUnreachableSuper": "error",
-				"noUnsafeFinally": "error",
-				"noUnsafeOptionalChaining": "error",
-				"useValidForDirection": "warn",
-				"useYield": "error"
-			},
+      "correctness": {
+        "noEmptyPattern": "error",
+        "noInvalidConstructorSuper": "error",
+        "noNewSymbol": "error",
+        "noNonoctalDecimalEscape": "error",
+        "noSwitchDeclarations": "error",
+        "noUndeclaredVariables": "error",
+        "noUnreachableSuper": "error",
+        "noUnsafeFinally": "error",
+        "noUnsafeOptionalChaining": "error",
+        "useValidForDirection": "warn",
+        "useYield": "error"
+      },
 
-			"security": {
-				"noDangerouslySetInnerHtml": "warn",
-				"noGlobalEval": "error"
-			},
+      "security": {
+        "noDangerouslySetInnerHtml": "warn",
+        "noGlobalEval": "error"
+      },
 
-			"nursery": {
-				"useSortedClasses": {
-					"level": "warn",
-					"fix": "unsafe",
-					"options": {
-						"functions": ["cn"],
-						"attributes": ["className", "class"]
-					}
-				}
-			}
-		}
-	},
+      "nursery": {
+        "useSortedClasses": {
+          "level": "warn",
+          "fix": "unsafe",
+          "options": {
+            "functions": ["cn"],
+            "attributes": ["className", "class"]
+          }
+        }
+      }
+    }
+  },
 
-	"javascript": {
-		"formatter": {
-			"quoteStyle": "single",
-			"semicolons": "always",
-			"arrowParentheses": "always",
-			"bracketSameLine": true,
-			"bracketSpacing": true,
-			"jsxQuoteStyle": "single",
-			"quoteProperties": "asNeeded",
-			"trailingCommas": "all",
-			"lineEnding": "lf",
-			"attributePosition": "multiline"
-		}
-	},
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "trailingCommas": "es5",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "bracketSameLine": true,
+      "bracketSpacing": true,
+      "jsxQuoteStyle": "single",
+      "quoteProperties": "asNeeded",
+      "lineEnding": "lf",
+      "attributePosition": "multiline"
+    }
+  },
 
-	"json": {
-		"formatter": {
-			"trailingCommas": "none"
-		}
-	},
+  "json": {
+    "formatter": {
+      "trailingCommas": "none"
+    }
+  },
 
-	"vcs": {
-		"enabled": true,
-		"clientKind": "git",
-		"useIgnoreFile": true,
-		"defaultBranch": "main"
-	},
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true,
+    "defaultBranch": "main"
+  },
 
-	"files": {
-		"ignoreUnknown": false,
-		"ignore": [
-			"node_modules/",
-			"build/",
-			".next/",
-			"dist/",
-			".turbo",
-			"coverage/",
-			".output/",
-			".vercel/"
-		]
-	}
+  "files": {
+    "ignoreUnknown": false,
+    "ignore": [
+      "node_modules/",
+      "build/",
+      ".next/",
+      "dist/",
+      ".turbo",
+      "coverage/",
+      ".output/",
+      ".vercel/"
+    ]
+  }
 }

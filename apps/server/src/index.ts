@@ -1,6 +1,6 @@
-import express from 'express';
-import cors from 'cors';
 import { logger } from '@repo/utils';
+import cors from 'cors';
+import express from 'express';
 
 const app = express();
 

@@ -2,16 +2,13 @@
 node_modules
 .pnpm-store
 
-# Build output
-dist
-dist-ssr
-*.local
+# Version control
+.git
+.gitignore
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
+# Editor files
+.vscode
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
@@ -26,7 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Environment variables
+# Environment
 .env
 .env.*
 !.env.example
@@ -37,3 +34,19 @@ coverage
 
 # Turbo
 .turbo
+
+# Misc
+.DS_Store
+README.md
+LICENSE
+
+# Documentation
+docs
+*.md
+!README.md
+
+# Build artifacts
+**/dist
+**/build
+**/.next
+**/out 

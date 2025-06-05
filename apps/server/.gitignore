@@ -4,8 +4,7 @@ node_modules
 
 # Build output
 dist
-dist-ssr
-*.local
+build
 
 # Editor directories and files
 .vscode/*
@@ -37,3 +36,9 @@ coverage
 
 # Turbo
 .turbo
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock 

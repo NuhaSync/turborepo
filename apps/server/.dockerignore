@@ -4,14 +4,15 @@ node_modules
 
 # Build output
 dist
-dist-ssr
-*.local
+build
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
+# Version control
+.git
+.gitignore
+
+# Editor files
+.vscode
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
@@ -26,7 +27,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Environment variables
+# Environment
 .env
 .env.*
 !.env.example
@@ -37,3 +38,14 @@ coverage
 
 # Turbo
 .turbo
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Misc
+.DS_Store
+README.md
+LICENSE 

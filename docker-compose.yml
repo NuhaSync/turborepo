@@ -1,25 +1,33 @@
+version: "3.8"
+
 services:
   client:
+    container_name: client
     build:
       context: .
-      dockerfile: apps/client/Dockerfile
+      dockerfile: ./apps/client/Dockerfile
+    restart: always
     ports:
       - "3000:3000"
-    volumes:
-      - ./apps/client:/app/apps/client
-      - /app/node_modules
     environment:
+      - NODE_ENV=development
       - VITE_API_URL=http://server:8080
-    depends_on:
-      - server
-    command: pnpm --filter @repo/client dev
+    networks:
+      - app_network
+
   server:
+    container_name: server
     build:
       context: .
-      dockerfile: apps/server/Dockerfile
+      dockerfile: ./apps/server/Dockerfile
+    restart: always
     ports:
       - "8080:8080"
-    volumes:
-      - ./apps/server:/app/apps/server
-      - /app/node_modules
-    command: pnpm --filter @repo/server dev
+    environment:
+      - NODE_ENV=development
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
